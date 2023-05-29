@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>TodoX</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images.png" type="image/x-icon">
+    <!-- Coustom css -->
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap CSS -->
     <link
@@ -14,10 +17,13 @@
     />
   </head>
 
-  <body style="background-color: black; color: white;">
+  <body style="background-color: black; color: white">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand">TodoX</a>
+        <a class="navbar-brand">
+          <img src="images.png" width="30" height="24" />
+          TodoX</a
+        >
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -25,7 +31,9 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn mx-3 btn-outline-success" type="submit">Search</button>
+          <button class="btn mx-3 btn-outline-success" type="submit">
+            Search
+          </button>
         </form>
       </div>
     </nav>
@@ -69,8 +77,7 @@
               <th scope="col">Actions</th>
             </tr>
           </thead>
-          <tbody id="tableBody">
-          </tbody>
+          <tbody id="tableBody"></tbody>
         </table>
       </div>
     </div>
@@ -92,6 +99,7 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <!-- Coustom JS -->
     <script src="script.js"></script>
   </body>
 </html>
